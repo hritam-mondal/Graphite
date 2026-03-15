@@ -10,7 +10,7 @@ import { Chat } from '@features/chat/components/Chat';
 export default function App() {
   return (
     <ThemeProvider defaultTheme="system">
-      <Router>
+      <Router basename={import.meta.env.PROD ? '/graphite' : ''}>
         <Routes>
           <Route path="/" element={
             <ChatProvider>
