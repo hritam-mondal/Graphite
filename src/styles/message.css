@@ -1,0 +1,63 @@
+/* Message Wrapper */
+.message {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 56rem;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Message Icon Container */
+.message-icon {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #999;
+}
+
+.message-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Message Content */
+.message-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.message-text {
+  color: #333;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .message {
+    padding: 0 0.5rem;
+  }
+}
