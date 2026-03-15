@@ -1,4 +1,4 @@
-import axios, { AxiosInstance, AxiosError } from 'axios';
+import axios, { type AxiosInstance, AxiosError } from 'axios';
 import { env } from '@config/env';
 
 const apiClient: AxiosInstance = axios.create({

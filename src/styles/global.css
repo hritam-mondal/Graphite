@@ -315,6 +315,32 @@
   animation: ov-drift 12s ease-in-out infinite alternate;
 }
 
+.ov-orb--a {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(139, 92, 246, 0.12));
+  top: 10%;
+  left: 15%;
+}
+
+.ov-orb--b {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(16, 185, 129, 0.08));
+  top: 60%;
+  right: 20%;
+  animation-delay: -4s;
+}
+
+.ov-orb--c {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.08), rgba(245, 101, 101, 0.06));
+  bottom: 20%;
+  left: 60%;
+  animation-delay: -8s;
+}
+
 .ov-inner {
   position: relative;
   z-index: 1;
@@ -326,6 +352,13 @@
   box-sizing: border-box;
   padding: 0 0.5rem;
   gap: 0.9rem;
+}
+
+.ov-headline-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .ov-headline {
@@ -411,6 +444,12 @@
   border: 1px solid var(--overview-cap-icon-border);
   border-radius: 8px;
   color: var(--overview-cap-icon-color);
+}
+
+.ov-cap-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .ov-cap-label {

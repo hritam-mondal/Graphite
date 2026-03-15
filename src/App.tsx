@@ -1,5 +1,4 @@
 import { ThemeProvider } from './features/theme/state/ThemeContext';
-import { ThemeToggle } from './features/theme';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "@features/auth/pages/LoginPage";
 import SignupPage from "@features/auth/pages/SignupPage";
@@ -11,10 +10,6 @@ import { Chat } from '@features/chat/components/Chat';
 export default function App() {
   return (
     <ThemeProvider defaultTheme="system">
-      {/* Global theme toggle — floats over all routes */}
-      <div style={{ position: 'fixed', top: 16, right: 16, zIndex: 100 }}>
-        <ThemeToggle />
-      </div>
       <Router>
         <Routes>
           <Route path="/" element={
