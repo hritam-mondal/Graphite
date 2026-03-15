@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/graphite/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphite</title>
+  <script>
+    (function () {
+      var stored = localStorage.getItem('app-theme');
+      var theme = stored === 'light' || stored === 'dark'
+        ? stored
+        : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <script type="module" crossorigin src="/graphite/assets/index-obomsedL.js"></script>
+  <link rel="modulepreload" crossorigin href="/graphite/assets/rolldown-runtime-COnpUsM8.js">
+  <link rel="modulepreload" crossorigin href="/graphite/assets/react-vendor-D14hdkrq.js">
+  <link rel="modulepreload" crossorigin href="/graphite/assets/ui-vendor-BmFgm4Pj.js">
+  <link rel="stylesheet" crossorigin href="/graphite/assets/index-B9etsU_q.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
